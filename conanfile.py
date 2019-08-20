@@ -43,7 +43,7 @@ class HarfbuzzConan(ConanFile):
         if self.options.with_icu:
             self.requires.add("icu/64.2@bincrafters/stable")
         if self.options.with_glib:
-            self.requires.add("glib/2.58.3@bincrafters/stable")
+            self.requires.add("glib/2.60.3@bincrafters/stable")
 
     def configure(self):
         del self.settings.compiler.libcxx
